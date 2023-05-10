@@ -1,0 +1,96 @@
+body{
+    background-color: white;
+    font-family: 'Farsan';
+    font-weight: 800; /*ou bold*/
+    color: rgb(255, 187, 0); /*editar*/    
+    text-align: center;
+    font-size: larger; /*editar*/
+}
+
+h1
+{
+    margin: auto;
+    font-size: 2rem;
+    text-shadow: 2px 2px darkorange;
+}
+
+h3{
+    margin-bottom: auto;
+    font-size: 1.8rem;
+    color: sienna;
+}
+
+header
+{
+    background: linear-gradient(90deg, rgb(175, 149, 110), rgb(238, 204, 153)); /*linear gradient cor degradada, 90deg em noventa graus*/
+    color: white;
+    font-size: 4rem;
+    text-shadow: 2px 2px sienna;
+    padding: 8px;
+}
+
+.foto_principal{
+    width: 85%;
+    margin: 2% auto;
+    filter: drop-shadow(5px 5px 0 #fde3bb);
+}
+
+.container{
+    display: flex;
+    background: linear-gradient(90deg, rgb(218, 180, 125),navajowhite);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 16px; /*margem que separa os conteiners*/
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.foto_lateral{
+    width: 100%;
+    margin: 12px;
+    box-sizing: border-box; /*fechar a caixa com bordas iguais tano a imagem quanto o texto*/
+}
+
+.receita{
+    width: 100%;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    padding: 50px;
+    font-family: 'Farzan', cursive;
+    font-size: large;
+}
+
+img{
+    width: 100%;
+}
+
+@media screen and (min-width: 980px) {    /* ja este comando faz com que: SE a tela for menor que 980 ele ficara no formato de celular, SENAO se ele passar de 980 ele ira formatar o site no formato normal de tela de computador*/
+    header{                         /* estes comando irao substituir os demais la encima se a tela for maior que 980px(pixels)*/
+        font-size: 2.5rem;
+    }
+    .container{  
+        flex-wrap: nowrap;
+    }
+    .foto_lateral{
+        flex-wrap: nowrap;
+        padding: 15px;
+        width: 50%;
+        margin: auto;
+    }
+    .receita{
+        flex-wrap: nowrap;
+        padding: 15px; 
+        width: 50%;
+        margin: auto;
+    }
+   
+}
+
+
+
+
+
+
+
+/*navajowhite*/
